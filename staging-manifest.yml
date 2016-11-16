@@ -1,0 +1,11 @@
+---
+applications:
+- name: canvas-demo
+  command: bundle exec rake cf:on_first_instance db:migrate && bundle exec puma -e $RAILS_ENV -p $PORT -S ~/puma -C config/puma.rb
+  domain: run.platform.nirdhost.com
+  domain: satsea-air.com
+  host: staging
+  services:
+    - canvas-demo_db_staging
+  memory: 512MB
+  instances: 1

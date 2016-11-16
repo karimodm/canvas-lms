@@ -34,3 +34,5 @@ env:
   - SPEC="spec/serializers/**/*_spec.rb"
   - SPEC="spec/services/**/*_spec.rb"
   - SPEC="spec/views/**/*_spec.rb"
+after_success:
+  - bash ./deploy.sh
