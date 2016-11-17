@@ -5,6 +5,8 @@ services:
 before_install:
   - gem uninstall bundler
   - gem list | grep bundle
+  - gem uninstall bundler -v 1.13.6
+  - gem list | grep bundle
   - gem install bundler -v 1.12.5
 before_script:
   - find ./config -depth -name "*.yml.example" -exec sh -c 'cp "$1" "${1%.yml.example}.yml"' _ {} \;
