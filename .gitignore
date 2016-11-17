@@ -30,11 +30,6 @@ app/stylesheets/brandable_css_brands
 /db/*.sqlite*
 /db/*sql
 /exports/
-Gemfile.lock
-Gemfile.lock2
-Gemfile.lock3
-Gemfile.lock4
-Gemfile.lock4_2
 /log/
 mkmf.log
 /node_modules
