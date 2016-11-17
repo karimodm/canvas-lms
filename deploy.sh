@@ -59,11 +59,7 @@ fi
 ######################
 echo -e "${GREEN}[+] Setting application environment"
 {
-cf set-env $APPLICATION_NAME AWS_KEY_ID "$AWS_KEY_ID"
-cf set-env $APPLICATION_NAME AWS_SECRET_KEY "$AWS_SECRET_KEY"
-cf set-env $APPLICATION_NAME EMAIL_DOMAIN "$EMAIL_DOMAIN"
-cf set-env $APPLICATION_NAME EMAIL_PASSWORD "$EMAIL_PASSWORD"
-cf set-env $APPLICATION_NAME EMAIL_USERNAME "$EMAIL_USERNAME"
+#cf set-env $APPLICATION_NAME EMAIL_USERNAME "$EMAIL_USERNAME"
 } > /dev/null
 
 ######################
