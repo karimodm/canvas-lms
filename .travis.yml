@@ -3,7 +3,11 @@ rvm:
 services:
   - redis-server
 before_install:
-  - gem uninstall -a bundler
+  - gem uninstall bundler
+  - gem uninstall bundler
+  - gem uninstall bundler
+  - gem uninstall bundler
+  - gem list | grep bundle
   - gem install bundler -v 1.12.5
 before_script:
   - find ./config -depth -name "*.yml.example" -exec sh -c 'cp "$1" "${1%.yml.example}.yml"' _ {} \;
